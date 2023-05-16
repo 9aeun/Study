@@ -4,6 +4,7 @@ import net.nurigo.java_sdk.api.Message;
 import net.nurigo.java_sdk.exceptions.CoolsmsException;
 
 public class sms {
+
   public static void main(String[] args) {
     String api_key = ""; #공공데이터 api key 입력
     String api_secret = "";
