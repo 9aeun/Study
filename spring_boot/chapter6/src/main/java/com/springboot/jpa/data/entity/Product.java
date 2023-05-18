@@ -1,7 +1,7 @@
 package com.springboot.jpa.data.entity;
 
 import javax.persistence.*;
-import java.time.LocalDataTime;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "product")
@@ -20,9 +20,9 @@ public class Product{
     @Column(nullable = false)
     private Integer stock;
 
-    private LocalDataTime createdAt;
+    private LocalDateTime createdAt;
 
-    private LocalDataTime updatedAt;
+    private LocalDateTime updatedAt;
 
     public Long getNumber() {
         return number;
@@ -56,19 +56,19 @@ public class Product{
         this.stock = stock;
     }
 
-    public LocalDataTime getCreatedAt() {
+    public LocalDateTime getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(LocalDataTime createdAt) {
+    public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
     }
 
-    public LocalDataTime getUpdatedAt() {
+    public LocalDateTime getUpdatedAt() {
         return updatedAt;
     }
 
-    public void setUpdatedAt(LocalDataTime updatedAt) {
+    public void setUpdatedAt(LocalDateTime updatedAt) {
         this.updatedAt = updatedAt;
     }
 }
