@@ -13,7 +13,7 @@ public class DeleteController {
     public String DeleteVariable(@PathVariable String variable){
         return variable;
     }
-
+  
     // @RequestParam 활용
     // http://localhost:8080//api/v1/delete-api/request1?email=value
     @DeleteMapping(value = "/request1")
