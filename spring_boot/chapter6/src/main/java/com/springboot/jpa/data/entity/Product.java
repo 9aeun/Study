@@ -3,7 +3,7 @@ package com.springboot.jpa.data.entity;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
+@Entity  
 @Table(name = "product")
 public class Product{
 
