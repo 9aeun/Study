@@ -3,6 +3,7 @@ package com.springboot.jpa.service.Impl;
 import com.springboot.jpa.data.dao.ProductDAO;
 import com.springboot.jpa.data.dto.ProductDto;
 import com.springboot.jpa.data.dto.ProductResponseDto;
+import com.springboot.jpa.data.entity.Product;
 import com.springboot.jpa.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -16,7 +17,15 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public ProductResponseDto getProduct(Long number) {
-        return null;
+        Product product = productDAO.selectProduct(number);
+
+        ProductResponseDto productResponseDto = new ProductResponseDto();
+        productResponseDto.setNumber(product.getNumber());
+        productResponseDto.setName(product.getName());
+        productResponseDto.setPrice(product.getPrice());
+        productResponseDto.setStock(product.getStock());
+
+        return productResponseDto;
     }
 
     @Override
