@@ -16,7 +16,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public ProductResponseDto getProduct(Long number) {
+    public ProductResponseDto getProduct(Long number) {      
         Product product = productDAO.selectProduct(number);
 
         ProductResponseDto productResponseDto = new ProductResponseDto();
