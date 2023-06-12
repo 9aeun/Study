@@ -6,6 +6,8 @@ public class ProductResponseDto {
     private String name;
     private int price;
     private int stock;
+    
+    public ProductResponseDto() {}
 
     public ProductResponseDto(Long number, String name, int price, int stock){
         this.number = number;
