@@ -1,5 +1,4 @@
 package com.springboot.jpa.config;
-
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.springframework.context.annotation.Bean;
