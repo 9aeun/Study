@@ -11,6 +11,7 @@ public class sms {
 
     // 4 params(to, from, type, text) are mandatory. must be filled
     HashMap<String, String> params = new HashMap<String, String>();
+
     params.put("to", "수신전화번호");// 수신전화번호(여러개 하고 싶으면 ,로 쓰기)
     params.put("from", "내 전화번호");	// 발신전화번호. 테스트시에는 발신,수신 둘다 본인 번호로 하면 됨
     params.put("type", "SMS");
